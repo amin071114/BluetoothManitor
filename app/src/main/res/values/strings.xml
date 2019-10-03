@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">زریاب</string>
+    <string name="is_enable">بلوتوث فعال شد</string>
+    <string name="is_disable">بلوتوث غیر فعال شد</string>
+    <string name="is_cancel">فعال سازی بلوتوث لغو شد</string>
+    <string name="no_available">دستگاه دارای بلتوث نمی باشد!!!</string>
+    <string name="search_devices">جست وجو دستگاه</string>
+    <string name="make_discoverable"> نمایش بلوتوث </string>
+</resources>
