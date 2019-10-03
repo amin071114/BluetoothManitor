@@ -20,35 +20,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageButton
+        <Button
             android:id="@+id/btn_toggle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp"
             android:layout_centerInParent="true"
-             android:background="@android:color/transparent"
-            android:layout_marginStart="-30dp"
-            android:layout_marginLeft="-30dp" />
+             android:background="@drawable/bluetooth_off" />
 
-        <ImageButton
+
+        <Button
             android:id="@+id/btn_refresh"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_above="@id/btn_toggle"
             android:layout_alignBaseline="@id/btn_toggle"
             android:layout_alignStart="@id/btn_toggle"
             android:layout_alignLeft="@id/btn_toggle"
-            android:layout_alignTop="@id/btn_toggle"
-            android:layout_alignBottom="@id/btn_toggle"
             android:layout_centerInParent="true"
-            android:src="@drawable/refrsh_icon"
-            android:background="@android:color/transparent"
-            android:layout_marginStart="-30dp"
-            android:layout_marginLeft="-30dp" />
-
+            android:layout_marginStart="-55dp"
+            android:layout_marginLeft="-55dp"
+            android:background="@drawable/refrsh_icon" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -58,22 +51,59 @@
             android:text="@string/app_name"
             android:textColor="@android:color/white"
             android:textSize="20sp"
-            android:layout_alignParentStart="true" />\/>
+            android:layout_alignParentStart="true" />
 
     </RelativeLayout>
 
 </androidx.appcompat.widget.Toolbar>
 
-    <androidx.core.widget.NestedScrollView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/toolbar">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        >
 
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text="@string/pair"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/hr_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text="@string/scan"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/vrb_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

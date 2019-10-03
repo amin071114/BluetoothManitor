@@ -9,4 +9,6 @@
     <string name="exit">خروج</string>
     <string name="Warnin">سدتگاه دارای بلوتوث نمی باشد.</string>
     <string name="warning_title">هشدار</string>
+    <string name="scan">دستگاه های یافت شده</string>
+    <string name="pair">دستگاهای جفت شده</string>
 </resources>
