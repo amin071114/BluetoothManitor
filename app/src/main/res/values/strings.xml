@@ -11,4 +11,5 @@
     <string name="warning_title">هشدار</string>
     <string name="scan">دستگاه های یافت شده</string>
     <string name="pair">دستگاهای جفت شده</string>
+    <string name="not_connected">بلوتوث متصل نمی باشد.</string>
 </resources>
