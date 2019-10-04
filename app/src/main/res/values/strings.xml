@@ -12,4 +12,6 @@
     <string name="scan">دستگاه های یافت شده</string>
     <string name="pair">دستگاهای جفت شده</string>
     <string name="not_connected">بلوتوث متصل نمی باشد.</string>
+    <string name="need_loc_access">نیاز یه دست رسی به gps لطفا دست رسی دهید.</string>
+    <string name="ok">باشه</string>
 </resources>
