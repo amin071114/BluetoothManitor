@@ -82,7 +82,7 @@
                     android:text="@string/pair"/>
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/hr_recycler_view"
+                    android:id="@+id/pair_recycler_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:scrollbars="vertical" />
@@ -91,15 +91,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:gravity="end|right"
-                    tools:ignore="RtlHardcoded">
+                    android:gravity="end|right">
 
                     <ProgressBar
                         android:layout_width="18dp"
                         android:layout_height="18dp"
                         android:layout_gravity="center"
                         android:id="@+id/progress_bar"
-                        />
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -113,7 +113,7 @@
 
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/vrb_recycler_view"
+                    android:id="@+id/scan_recycler_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:scrollbars="vertical" />
